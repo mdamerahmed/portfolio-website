@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Portfolio of Mohammed Amer Ahmed, a data analyst based in Manchester, UK."
+    >
+
+    <title>Mohammed Amer Ahmed | Data Analyst</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #1f2937;
+            background: #f8fafc;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 8%;
+            background: #0f172a;
+        }
+
+        nav .logo {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 22px;
+            list-style: none;
+        }
+
+        nav a {
+            color: #e2e8f0;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        header {
+            min-height: 85vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 70px 8%;
+            text-align: center;
+            color: white;
+            background: linear-gradient(135deg, #0f172a, #1e3a8a);
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        header h1 {
+            margin-bottom: 12px;
+            font-size: 52px;
+        }
+
+        header h2 {
+            margin-bottom: 22px;
+            color: #7dd3fc;
+            font-size: 25px;
+        }
+
+        header p {
+            margin: 0 auto 30px;
+            max-width: 750px;
+            font-size: 18px;
+            color: #e2e8f0;
+        }
+
+        .button {
+            display: inline-block;
+            margin: 6px;
+            padding: 13px 22px;
+            border-radius: 7px;
+            color: white;
+            background: #0284c7;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #0369a1;
+        }
+
+        .button-secondary {
+            border: 1px solid #7dd3fc;
+            background: transparent;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 75px 8%;
+        }
+
+        section h2 {
+            margin-bottom: 30px;
+            color: #0f172a;
+            font-size: 32px;
+            text-align: center;
+        }
+
+        .about-text {
+            max-width: 850px;
+            margin: auto;
+            font-size: 17px;
+            text-align: center;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .skill {
+            padding: 10px 16px;
+            border-radius: 25px;
+            background: #e0f2fe;
+            color: #075985;
+            font-weight: bold;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+
+        .card {
+            padding: 25px;
+            border-radius: 10px;
+            background: white;
+            box-shadow: 0 5px 18px rgba(15, 23, 42, 0.09);
+        }
+
+        .card h3 {
+            margin-bottom: 8px;
+            color: #0f172a;
+        }
+
+        .card h4 {
+            margin-bottom: 12px;
+            color: #0369a1;
+        }
+
+        .card p {
+            margin-bottom: 12px;
+        }
+
+        .card ul {
+            padding-left: 20px;
+        }
+
+        .card li {
+            margin-bottom: 8px;
+        }
+
+        .project-link {
+            display: inline-block;
+            margin-top: 12px;
+            color: #0369a1;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
+        #contact {
+            text-align: center;
+        }
+
+        #contact p {
+            margin-bottom: 10px;
+        }
+
+        #contact a {
+            color: #0369a1;
+        }
+
+        footer {
+            padding: 25px;
+            color: #cbd5e1;
+            background: #0f172a;
+            text-align: center;
+        }
+
+        @media (max-width: 750px) {
+            nav {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 12px;
+            }
+
+            header h1 {
+                font-size: 38px;
+            }
+
+            header h2 {
+                font-size: 21px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">Mohammed Amer Ahmed</div>
+
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="hero-content">
+            <h1>Mohammed Amer Ahmed</h1>
+
+            <h2>Data Analyst | Power BI | SQL | Python</h2>
+
+            <p>
+                Data-driven analyst with more than three years of experience
+                across inventory analytics and credit risk analysis. MSc Data
+                Science graduate based in Manchester, United Kingdom.
+            </p>
+
+            <a
+                class="button"
+                href="Mohammed_Amer_Ahmed_Resume.pdf"
+                target="_blank"
+            >
+                View Resume
+            </a>
+
+            <a
+                class="button button-secondary"
+                href="https://github.com/mdamerahmed"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                View GitHub
+            </a>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="about">
+            <h2>About Me</h2>
+
+            <p class="about-text">
+                I am an analytical professional experienced in analysing large
+                datasets, developing Power BI dashboards, reporting KPIs and
+                delivering actionable business insights. In my current role,
+                I analyse inventory across more than 20,000 SKUs and support
+                forecasting, replenishment planning and inventory accuracy.
+                I am seeking Data Analyst and Business Intelligence
+                opportunities in the United Kingdom.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+
+            <div class="skills-container">
+                <span class="skill">Python</span>
+                <span class="skill">SQL</span>
+                <span class="skill">Power BI</span>
+                <span class="skill">Microsoft Excel</span>
+                <span class="skill">Pandas</span>
+                <span class="skill">NumPy</span>
+                <span class="skill">Scikit-learn</span>
+                <span class="skill">NLTK</span>
+                <span class="skill">Data Visualisation</span>
+                <span class="skill">Dashboard Development</span>
+                <span class="skill">KPI Reporting</span>
+                <span class="skill">Inventory Forecasting</span>
+                <span class="skill">Root Cause Analysis</span>
+                <span class="skill">Linnworks</span>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Professional Experience</h2>
+
+            <div class="card-grid">
+
+                <article class="card">
+                    <h3>Inventory Analyst</h3>
+                    <h4>Status Car Care Ltd | October 2025 – Present</h4>
+
+                    <ul>
+                        <li>
+                            Analyse inventory performance, stock movement and
+                            sales trends across more than 20,000 SKUs.
+                        </li>
+                        <li>
+                            Develop Power BI dashboards to monitor stock
+                            availability, turnover and replenishment KPIs.
+                        </li>
+                        <li>
+                            Support forecasting using historical demand and
+                            inventory data.
+                        </li>
+                        <li>
+                            Improved inventory accuracy from 96% to 99%.
+                        </li>
+                        <li>
+                            Reduced dashboard preparation time from two hours
+                            to 20 minutes.
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <h3>Credit Analyst</h3>
+                    <h4>Vivifi India Finance | May 2022 – August 2024</h4>
+
+                    <ul>
+                        <li>
+                            Analysed customer financial information, credit
+                            reports, income records and bank statements.
+                        </li>
+                        <li>
+                            Conducted affordability assessments and credit risk
+                            analysis for loan applications.
+                        </li>
+                        <li>
+                            Analysed more than 1,000 applications each month.
+                        </li>
+                        <li>
+                            Identified more than 300 high-risk or potentially
+                            fraudulent applications.
+                        </li>
+                        <li>
+                            Maintained more than 98% compliance and quality
+                            accuracy.
+                        </li>
+                    </ul>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Data Projects</h2>
+
+            <div class="card-grid">
+
+                <article class="card">
+                    <h3>UK Retail Sales Dashboard</h3>
+                    <h4>SQL | Power BI | Microsoft Excel</h4>
+
+                    <p>
+                        Extracted, cleaned and transformed retail sales data
+                        and created an interactive dashboard to analyse sales
+                        performance, revenue trends, customer behaviour,
+                        regional performance and business KPIs.
+                    </p>
+
+                    <a
+                        class="project-link"
+                        href="https://github.com/mdamerahmed/UK-Retail-Sales-Dashboard"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View project on GitHub →
+                    </a>
+                </article>
+
+                <article class="card">
+                    <h3>Customer Sentiment Analysis using NLP</h3>
+                    <h4>Python | Pandas | NLTK | Scikit-learn</h4>
+
+                    <p>
+                        Developed a natural language processing pipeline to
+                        classify customer reviews. Applied tokenisation,
+                        stop-word removal, stemming and TF-IDF vectorisation,
+                        and evaluated machine-learning classification models.
+                    </p>
+
+                    <a
+                        class="project-link"
+                        href="https://github.com/mdamerahmed/sentiment-analysis-nlp"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View project on GitHub →
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+
+            <div class="card-grid">
+
+                <article class="card">
+                    <h3>MSc Data Science</h3>
+                    <h4>University of Salford</h4>
+                    <p>August 2024 – September 2025</p>
+                    <p>Manchester, United Kingdom</p>
+                </article>
+
+                <article class="card">
+                    <h3>Bachelor of Technology in Mechanical Engineering</h3>
+                    <h4>Institute of Aeronautical Engineering</h4>
+                    <p>July 2018 – April 2022</p>
+                    <p>Hyderabad, India</p>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <p>Manchester, United Kingdom</p>
+
+            <p>
+                Email:
+                <a href="mailto:mdamerahmed872@gmail.com">
+                    mdamerahmed872@gmail.com
+                </a>
+            </p>
+
+            <p>
+                <a
+                    href="https://www.linkedin.com/in/mdamer-ahmed-971851192"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    LinkedIn
+                </a>
+                |
+                <a
+                    href="https://github.com/mdamerahmed"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub
+                </a>
+            </p>
+
+            <a
+                class="button"
+                href="Mohammed_Amer_Ahmed_Resume.pdf"
+                download
+            >
+                Download Resume
+            </a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Mohammed Amer Ahmed. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
