@@ -1,4 +1,5 @@
 import './App.css'
+import profileImage from './assets/profile.png'
 
 const skills = [
   'Python',
@@ -134,6 +135,12 @@ function App() {
               </div>
             </div>
           </div>
+          <div className="hero-image">
+  <img
+    src={profileImage}
+    alt="Mohammed Amer Ahmed"
+  />
+</div>
         </section>
 
         <section className="section" id="about">
