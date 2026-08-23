@@ -1,5 +1,7 @@
 import './App.css'
 import profileImage from './assets/profile.png'
+import retailDashboard from './assets/uk-retail-dashboard.png'
+import nlpSentiment from './assets/nlp-sentiment-analysis.jpg'
 
 const skillGroups = [
   {
@@ -57,15 +59,17 @@ const projects = [
     title: 'UK Retail Sales Dashboard',
     technologies: 'SQL · Power BI · Microsoft Excel',
     description:
-      'An interactive business intelligence dashboard created to analyse sales performance, revenue trends, regional results, customer behaviour and product-level KPIs.',
-    link: 'https://github.com/mdamerahmed/UK-Retail-Sales-Dashboard',
+  'An interactive business intelligence dashboard created to analyse sales performance, revenue trends, regional results, customer behaviour and product-level KPIs.',
+image: retailDashboard,
+link: 'https://github.com/mdamerahmed/UK-Retail-Sales-Dashboard',
   },
   {
     title: 'Customer Sentiment Analysis using NLP',
     technologies: 'Python · Pandas · NLTK · Scikit-learn',
     description:
       'An end-to-end natural language processing project that cleans customer reviews, applies TF-IDF vectorisation and evaluates machine-learning models for sentiment classification.',
-    link: 'https://github.com/mdamerahmed/sentiment-analysis-nlp',
+   image: nlpSentiment,
+      link: 'https://github.com/mdamerahmed/sentiment-analysis-nlp',
   },
 ]
 
@@ -258,6 +262,13 @@ function App() {
                 <p className="project-tech">{project.technologies}</p>
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
+                {project.image && (
+  <img
+    src={project.image}
+    alt={`${project.title} dashboard`}
+    className="project-image"
+  />
+)}
 
                 <a href={project.link} target="_blank" rel="noreferrer">
                   View project on GitHub →
