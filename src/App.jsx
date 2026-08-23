@@ -151,19 +151,23 @@ function App() {
 
           <div className="about-card">
             <p>
-              I am an analytical professional with experience across
-              e-commerce inventory management and financial credit risk. In my
-              current position, I analyse inventory performance across more
-              than 20,000 SKUs and support forecasting, replenishment planning,
-              reconciliation and KPI reporting.
+             <p>
+  I am an analytical professional with experience across e-commerce
+  inventory management and financial credit risk. In my current role, I
+  analyse inventory performance across more than 20,000 SKUs, supporting
+  forecasting, replenishment planning, stock reconciliation and KPI
+  reporting to improve operational decision-making.
+</p>
             </p>
 
             <p>
-              I hold an MSc in Data Science from the University of Salford and
-              have hands-on experience with SQL, Python, Power BI, Excel,
-              machine learning and natural language processing. I am seeking
-              Data Analyst, Business Intelligence Analyst and junior data
-              science opportunities in the United Kingdom.
+              <p>
+  With an MSc in Data Science from the University of Salford, I combine
+  practical business experience with technical skills in SQL, Python,
+  Power BI and Excel. I enjoy transforming complex datasets into clear
+  insights, identifying performance trends and building data-driven
+  solutions that support better business decisions.
+</p>
             </p>
           </div>
         </section>
