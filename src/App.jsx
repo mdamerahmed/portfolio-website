@@ -24,7 +24,8 @@ const skillGroups = [
 const experiences = [
   {
     role: 'Inventory Analyst',
-    company: 'Status Car Care Ltd',
+    company: 'Status Group',
+    companyWebsite: 'https://statusgroup.co.uk/',
     location: 'Manchester, United Kingdom',
     dates: 'October 2025 – Present',
     points: [
@@ -37,7 +38,8 @@ const experiences = [
   },
   {
     role: 'Credit Analyst',
-    company: 'Vivifi India Finance Pvt. Ltd.',
+    company: 'VIVIFI India Finance Pvt. Ltd.',
+    companyWebsite: 'https://www.vivifin.com/',
     location: 'Hyderabad, India',
     dates: 'May 2022 – August 2024',
     points: [
@@ -212,7 +214,19 @@ function App() {
                 <div className="experience-header">
                   <div>
                     <h3>{experience.role}</h3>
-                    <p className="company">{experience.company}</p>
+                   <p className="company">
+  {experience.companyWebsite ? (
+    <a
+      href={experience.companyWebsite}
+      target="_blank"
+      rel="noreferrer"
+    >
+      {experience.company} ↗
+    </a>
+  ) : (
+    experience.company
+  )}
+</p>
                   </div>
 
                   <div className="experience-meta">
