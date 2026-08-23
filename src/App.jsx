@@ -282,8 +282,9 @@ function App() {
             <h2>Let’s work with data</h2>
 
             <p>
-              I am open to Data Analyst, Business Intelligence and junior data
-              science opportunities across the United Kingdom.
+              <p>
+  I am open to Data Analyst, Business Intelligence Analyst, and Junior Data Scientist opportunities across the United Kingdom.
+</p>
             </p>
 
             <div className="contact-links">
@@ -309,7 +310,9 @@ function App() {
             </div>
           </div>
         </section>
-      </main>
+      </main><p>
+
+</p>
 
       <footer>
         <p>© 2026 Mohammed Amer Ahmed. Built with React.</p>
