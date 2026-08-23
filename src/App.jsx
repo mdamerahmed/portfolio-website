@@ -1,19 +1,24 @@
 import './App.css'
 import profileImage from './assets/profile.png'
 
-const skills = [
-  'Python',
-  'SQL',
-  'Power BI',
-  'Microsoft Excel',
-  'Pandas',
-  'NumPy',
-  'Scikit-learn',
-  'NLTK',
-  'Data Visualisation',
-  'Dashboard Development',
-  'KPI Reporting',
-  'Inventory Forecasting',
+const skillGroups = [
+  {
+    title: 'Data & BI',
+    skills: ['Python', 'SQL', 'Power BI', 'Microsoft Excel'],
+  },
+  {
+    title: 'Libraries & Machine Learning',
+    skills: ['Pandas', 'NumPy', 'Scikit-learn', 'NLTK'],
+  },
+  {
+    title: 'Analytics & Reporting',
+    skills: [
+      'Data Visualisation',
+      'Dashboard Development',
+      'KPI Reporting',
+      'Inventory Forecasting',
+    ],
+  },
 ]
 
 const experiences = [
@@ -178,13 +183,21 @@ function App() {
             <h2>Skills and technologies</h2>
           </div>
 
-          <div className="skills-grid">
-            {skills.map((skill) => (
-              <div className="skill-card" key={skill}>
-                {skill}
-              </div>
-            ))}
+          <div className="skill-groups">
+  {skillGroups.map((group) => (
+    <div className="skill-group" key={group.title}>
+      <h3>{group.title}</h3>
+
+      <div className="skills-grid">
+        {group.skills.map((skill) => (
+          <div className="skill-card" key={skill}>
+            {skill}
           </div>
+        ))}
+      </div>
+    </div>
+  ))}
+</div>
         </section>
 
         <section className="section" id="experience">

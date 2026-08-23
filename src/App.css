@@ -244,7 +244,16 @@ a {
   color: #cbd5e1;
   line-height: 1.8;
 }
+.skill-groups {
+  display: grid;
+  gap: 32px;
+}
 
+.skill-group h3 {
+  margin-bottom: 14px;
+  font-size: 22px;
+  color: #e5eefc;
+}
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
