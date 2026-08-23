@@ -263,11 +263,18 @@ function App() {
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
                 {project.image && (
-  <img
-    src={project.image}
-    alt={`${project.title} dashboard`}
-    className="project-image"
-  />
+  <a
+    href={project.link}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="project-image-link"
+  >
+    <img
+      src={project.image}
+      alt={`${project.title} project preview`}
+      className="project-image"
+    />
+  </a>
 )}
 
                 <a href={project.link} target="_blank" rel="noreferrer">
